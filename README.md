@@ -3,8 +3,11 @@
 Install:
 
 with NPM
+
 `npm i @codedbyjordan/aos.js`
+
 with Yarn
+
 `yarn add @codedbyjordan/aos.js`
 
 with CDN
