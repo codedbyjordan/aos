@@ -2,18 +2,22 @@ import "animate.css";
 
 const defaultOptions = {
   threshold: 0.15,
+  animation: "fade",
+  duration: "2s",
 };
 
 const buildAnimationProperty = (element) => {
-  const anim = element.getAttribute("data-aos-animate") || "fade";
-  const duration = element.getAttribute("data-aos-duration") || "2s";
+  const anim =
+    element.getAttribute("data-aos-animate") || defaultOptions.animation;
+  const duration =
+    element.getAttribute("data-aos-duration") || defaultOptions.duration;
 
   const property = `${anim} ${duration}`;
 
   return property;
 };
 
-const aosObserve = (toObserve, options = defaultOptions) => {
+const aosObserve = (toObserve, options) => {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -38,6 +42,10 @@ const aosObserve = (toObserve, options = defaultOptions) => {
 export const init = () => {
   const aosElements = document.querySelectorAll("[data-aos-animate]");
   aosElements.forEach((element) => {
-    aosObserve(element);
+    const options = {
+      threshold:
+        element.getAttribute("data-aos-threshold") || defaultOptions.threshold,
+    };
+    aosObserve(element, options);
   });
 };
