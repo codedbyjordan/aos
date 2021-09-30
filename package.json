@@ -1,0 +1,30 @@
+{
+  "name": "@codedbyjordan/aos.js",
+  "version": "1.0.3",
+  "repository": "git@github.com:codedbyjordan/aos.js.git",
+  "author": "Jordan Baron <jordannbaron@gmail.com>",
+  "license": "MIT",
+  "main": "dist/aos.bundle.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "animate.css": "^4.1.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
