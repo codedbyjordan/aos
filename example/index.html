@@ -16,7 +16,12 @@
         <h1 class="font-bold text-white text-5xl">AOS.js Example</h1>
       </div>
       <div class="text-2xl">
-        <div data-aos-animate="fadeIn" data-aos-duration="2s" data-aos-repeat>
+        <div
+          data-aos-animate="fadeIn"
+          data-aos-duration="2s"
+          data-aos-repeat
+          data-aos-threshold="1"
+        >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
           dicta sed et officiis repellendus, reprehenderit dignissimos maxime
           perspiciatis, ullam at dolorum temporibus pariatur ducimus atque quod
@@ -71,7 +76,13 @@
           doloremque odit nisi esse dolore pariatur, deserunt, alias, animi
           laudantium?
         </div>
-        <div class="w-full h-48 bg-purple-400"></div>
+        <div
+          class="w-full h-48 bg-purple-400"
+          data-aos-animate="fadeIn"
+          data-aos-duration="2s"
+          data-aos-repeat
+          data-aos-threshold="1"
+        ></div>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis
           nemo laudantium accusamus eveniet assumenda voluptatum, molestiae modi
@@ -89,7 +100,7 @@
     </div>
     <script src="../dist/aos.bundle.js"></script>
     <script>
-      aos.init()
+      aos.init();
     </script>
   </body>
 </html>
