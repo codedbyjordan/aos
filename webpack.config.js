@@ -4,7 +4,7 @@ module.exports = {
   entry: "./src/aos.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "aos.bundle.js",
+    filename: "aos.js",
     library: "aos",
   },
   module: {

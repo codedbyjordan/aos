@@ -1,10 +1,10 @@
 {
   "name": "@codedbyjordan/aos.js",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "repository": "git@github.com:codedbyjordan/aos.js.git",
   "author": "Jordan Baron <jordannbaron@gmail.com>",
   "license": "MIT",
-  "main": "dist/aos.bundle.js",
+  "main": "dist/aos.js",
   "scripts": {
     "build": "webpack"
   },
