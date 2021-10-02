@@ -4,16 +4,16 @@ Install:
 
 with NPM
 
-`npm i @codedbyjordan/aos.js`
+`npm i @codedbyjordan/aos`
 
 with Yarn
 
-`yarn add @codedbyjordan/aos.js`
+`yarn add @codedbyjordan/aos`
 
 with CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@codedbyjordan/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@codedbyjordan/aos"></script>
 <script>
   aos.init();
 </script>
