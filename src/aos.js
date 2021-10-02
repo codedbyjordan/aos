@@ -1,6 +1,6 @@
 import "animate.css";
 
-const defaultOptions = {
+export const defaultOptions = {
   threshold: 0.15,
   animation: "fade",
   duration: "2s",
@@ -17,7 +17,7 @@ const buildAnimationProperty = (element) => {
   return property;
 };
 
-const aosObserve = (toObserve, options) => {
+export const aosObserve = (toObserve, options) => {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
