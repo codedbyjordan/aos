@@ -35,6 +35,22 @@ aos.init();
 </div>
 ```
 
+### With React
+
+To use AOS.js with React, import the AnimateOnScroll component
+
+```js
+import AnimateOnScroll from "@codedbyjordan/AnimateOnScroll";
+```
+
+Then wrap what you want to animate with it
+
+```jsx
+<AnimateOnScroll animation="fadeIn">
+  <h1>Hello from AOS.js from React!</h1>
+</AnimateOnScroll>
+```
+
 AOS.js uses [Animate.css](https://animate.style/), so any animation there will work.
 
 ## Custom Animations
