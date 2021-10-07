@@ -13,7 +13,7 @@ with Yarn
 with CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@codedbyjordan/aos"></script>
+<script src="https://cdn.jsdelivr.net/npm/@codedbyjordan/aos@1.0.1/dist/aos.bundle.js"></script>
 <script>
   aos.init();
 </script>
