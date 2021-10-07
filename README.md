@@ -1,19 +1,19 @@
-## AOS.js - Easily Animate Elements When Scrolled To
+## AOS - Easily Animate Elements When Scrolled To
 
 Install:
 
 with NPM
 
-`npm i @codedbyjordan/aos.js`
+`npm i @codedbyjordan/aos`
 
 with Yarn
 
-`yarn add @codedbyjordan/aos.js`
+`yarn add @codedbyjordan/aos`
 
 with CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@codedbyjordan/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@codedbyjordan/aos"></script>
 <script>
   aos.init();
 </script>
@@ -31,31 +31,15 @@ aos.init();
 
 ```html
 <div data-aos-animate="fadeIn">
-  <h1>Hello from AOS.js!</h1>
+  <h1>Hello from AOS!</h1>
 </div>
 ```
 
-### With React
-
-To use AOS.js with React, import the AnimateOnScroll component
-
-```js
-import AnimateOnScroll from "@codedbyjordan/AnimateOnScroll";
-```
-
-Then wrap what you want to animate with it
-
-```jsx
-<AnimateOnScroll animation="fadeIn">
-  <h1>Hello from AOS.js from React!</h1>
-</AnimateOnScroll>
-```
-
-AOS.js uses [Animate.css](https://animate.style/), so any animation there will work.
+AOS uses [Animate.css](https://animate.style/), so any animation there will work.
 
 ## Custom Animations
 
-To use custom animations with AOS.js, simply add one with CSS
+To use custom animations with AOS, simply add one with CSS
 
 ```css
 @keyframe myCustomFadeIn {
@@ -73,13 +57,13 @@ And use the animation name inside of `data-aos-animate`
 
 ```html
 <div data-aos-animate="myCustonFadeIn">
-  <h1>Hello from AOS.js!</h1>
+  <h1>Hello from AOS!</h1>
 </div>
 ```
 
 ## All attributes
 
-All attributes AOS.js currently comes with includes
+All attributes AOS currently comes with includes
 `data-aos-animate` - Which animation to play when element comes into view (Default: fade)
 `data-aos-duration` - Duration of animation in seconds (Default: 2s)
 `data-aos-repeat` - Whether to repeat the animation on subsequent scrolls (Default: false)
