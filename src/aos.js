@@ -39,13 +39,16 @@ export const aosObserve = (toObserve, options) => {
   observer.observe(toObserve);
 };
 
-export const init = () => {
-  const aosElements = document.querySelectorAll("[data-aos-animate]");
-  aosElements.forEach((element) => {
-    const options = {
-      threshold:
-        element.getAttribute("data-aos-threshold") || defaultOptions.threshold,
-    };
-    aosObserve(element, options);
-  });
+export const aos = {
+  init: () => {
+    const aosElements = document.querySelectorAll("[data-aos-animate]");
+    aosElements.forEach((element) => {
+      const options = {
+        threshold:
+          element.getAttribute("data-aos-threshold") ||
+          defaultOptions.threshold,
+      };
+      aosObserve(element, options);
+    });
+  },
 };

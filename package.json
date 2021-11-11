@@ -1,15 +1,12 @@
 {
   "name": "@codedbyjordan/aos",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "repository": "git@github.com:codedbyjordan/aos.git",
   "author": "Jordan Baron <jordannbaron@gmail.com>",
   "license": "MIT",
   "main": "dist/aos.js",
-  "exports": {
-    "AnimateOnScroll": "./src/react/AnimateOnScroll.js"
-  },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack && cp src/aos.js dist/aos.js"
   },
   "files": [
     "dist",
@@ -18,7 +15,6 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
-    "animate.css": "^4.1.1",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.3.0",
     "react": "^17.0.2",
@@ -32,6 +28,7 @@
     ]
   },
   "dependencies": {
-    "@babel/preset-react": "^7.14.5"
+    "@babel/preset-react": "^7.14.5",
+    "animate.css": "^4.1.1"
   }
 }
